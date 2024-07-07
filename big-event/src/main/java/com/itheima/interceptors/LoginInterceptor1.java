@@ -14,6 +14,8 @@ public class LoginInterceptor1 implements HandlerInterceptor {
     @Override
     public  boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //令牌验证
+
+        Sting token11 = "zzzw";
         try {
             String token = request.getHeader("Authorization");
             Map<String, Object> claims = JwtUtil.parseToken(token);
