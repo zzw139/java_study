@@ -10,6 +10,7 @@ public class CodeTest {
     @Test
     private void generateRandomCode() {
         String captcha = "";
+       String zzw = "";
         int length = 4;
         Random random = new Random();
         for (int i = 0; i < length; i++) {
