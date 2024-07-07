@@ -16,6 +16,9 @@ public class LoginInterceptor1 implements HandlerInterceptor {
         //令牌验证
 
         Sting token11 = "zzzw";
+
+        Sting token112 = "zzzw";
+
         try {
             String token = request.getHeader("Authorization");
             Map<String, Object> claims = JwtUtil.parseToken(token);
