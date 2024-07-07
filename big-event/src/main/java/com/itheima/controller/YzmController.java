@@ -19,7 +19,7 @@ public class YzmController {
     public Result<String> yzm()
     {
         String yzm = CodeUtil.generateRandomCode();
-
+        System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwww");
         System.out.println("yzm = " + yzm);
         //存入redis
         ValueOperations<String, String> ops = redisTemplate.opsForValue();
